@@ -1,0 +1,80 @@
+body, html {
+    height: 100%;
+}
+header {
+    background-image: url('../images/auckland.jpg');
+    height: 75%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-dark-opacity {
+    background-color: rgba(52,58,64, 0.6);
+}
+.input-no-border {
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+.no-border {
+    border: none;
+    background: none;
+}
+.product-container {
+    border: 1px solid #cccccc;
+}
+.product-container img {
+    max-width: 300px;
+}
+.product-container .desc {
+    width: 230px;
+}
+footer {
+    border-top: 1px solid #cccccc;
+    background: #ededed;
+}
+footer ul li {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.search-icon {
+    display: none;
+}
+#carouselProducts {
+    display: none !important;
+}
+@media (max-width: 575.98px) {
+    .product-container img {
+        max-width: 100%;
+    }
+    #search-container {
+        display: none;
+    }
+    .search-icon {
+        display: inline-block;
+    }
+    #carouselProducts {
+        display: block !important;
+    }
+    #desktop-product-view {
+        display: none !important;
+    }
+    #carouselProducts .product-container {
+        margin: 0 !important;
+    }
+    #carouselProducts .carousel-indicators li {
+        background: #cccccc;
+    }
+    #carouselProducts .carousel-indicators li.active {
+        background: #4C4C4C
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .footer-section {
+        width: 100%;
+        border-bottom: 1px solid #cccccc;
+    }
+    .footer-section p::before {
+      content: "♥ ";
+    }
+}
